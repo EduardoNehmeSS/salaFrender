@@ -1,0 +1,112 @@
+print("---===========--- variaveis ---===========---")
+//int
+var numI: Int
+numI = 23
+numI = numI + 3
+print(numI)
+//double
+var numD: Double
+numD = 2.4
+print(numD)
+//String
+var nome: String
+nome = "Beatriz"
+print(nome)
+//transformar tipo
+var numero: Int
+numero = 2
+print(String(numero))
+print(Double(numero))
+
+var str = "123"
+if let num = Int(str) {
+    print(num + 2)
+}
+
+//desafio rapido 1
+var num1: Int
+var num2: Int
+var result: Int
+num1 = 2
+num2 = 3
+result = num1 + num2
+
+print("o numero é: "+String(result))
+
+print("---===========--- Array ---===========---")
+
+//criando e mostrando
+var nomesList = ["Beatriz", "Ana", "Raquel"]
+print(nomesList)
+print(nomesList[0])
+print(nomesList[1])
+print(nomesList[2])
+
+//criando um array vazio e inserindo
+
+var nomesString: [String] = []
+nomesString.append("Mariana")
+nomesString.append("Maria")
+print(nomesString)
+
+//removendo 
+nomesString.remove(at: 1)
+print(nomesString)
+
+//desafio rapido 2
+var frases: [String] = []
+frases.append("Quem oferece não quer dar")
+frases.append("Com um tijolo por dia no fim do ano tera um castelo")
+frases.append("O que Pedro diz sobre Paulo, diz mais sobre pedro do que sobre Paulo")
+
+print(frases[0])
+
+print("---===========--- Set ---===========---")
+
+var setList = Set<String>()
+setList.insert("Giovana")
+setList.insert("Duda")
+setList.insert("Alice")
+setList.insert("Alice")
+setList.insert("Alice")
+print(setList)
+
+print("---===========--- Dicionarios ---===========---")
+
+var animais = [String: String]()
+
+animais["Cavalo"] = "pocotó"
+animais["Gato"] = "miau"
+
+
+// ERROR: print(animais["Gato"])
+print(animais["Gato"]!)
+
+//desafio rapido 3
+var meses = [Int: String]()
+meses[1] = "Janeiro"
+meses[2] = "Fevereiro"
+meses[3] = "Março"
+meses[4] = "Abril"
+meses[5] = "Maio"
+meses[6] = "Junho"
+meses[7] = "Julho"
+meses[8] = "Agosto"
+meses[9] = "Setembro"
+meses[10] = "Outubro"
+meses[11] = "Novembro"
+meses[12] = "Dezembro"
+
+print(meses[10]!)
+print(meses[3]!)
+
+print("---===========--- Operadores ---===========---")
+
+print("Aritméticos")
+print("Somar (+) \n Somar (+) \n subtrair (-) \n multiplicar (*) \n dividir (/) \n)
+
+print("Relacionais")
+print("== (igual a) \n != (diferente) \n  > (maior que) \n < (menor que) \n >= (maior igual) \n <= (menor igual) \n")
+
+print("Logicos")
+print("&& (e) \n || (ou) \n")
